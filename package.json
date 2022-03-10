@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "buildgithub": "slidev build --base /web.test",
+    "buildgithub": "slidev build --base /web.test && rm -rf docs && mv dist docs",
     "dev": "slidev --open",
     "export": "slidev export"
   },

@@ -391,6 +391,16 @@ describe('AppComponent', () => {
 - Difference between *it* and *test* => **The Jest docs state it is an alias of test.**
 - Should I use both Cypress and Jest together? => It's very common to use Jest and Cypress in the same codebase. Jest for **Unit, Integration tests** and Cypress for **E2E tests**
 
+
+
+---
+layout: center
+class: text-center
+---
+# Cypress for E2E testing
+
+<iframe src="https://player.vimeo.com/video/237527670?h=87400eb056&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
 ---
 
 # References
