@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "slidev build",
+    "buildgithub": "slidev build --base /web.test",
+    "dev": "slidev --open",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.28.10",
+    "@slidev/theme-default": "*",
+    "@slidev/theme-seriph": "*"
+  },
+  "name": "web.test",
+  "devDependencies": {
+    "playwright-chromium": "^1.19.2"
+  }
+}
