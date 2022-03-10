@@ -386,6 +386,23 @@ describe('AppComponent', () => {
 
 ---
 
+# Test coverage
+
+Jest provides code coverage out of the box. 
+Open up package.json and add a script:
+
+```json
+"test:cov": "jest --coverage"
+```
+
+next run
+
+```bash
+npm run test:cov
+```
+
+---
+
 # Tips
 
 - Difference between *it* and *test* => **The Jest docs state it is an alias of test.**
