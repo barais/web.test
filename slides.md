@@ -46,7 +46,7 @@ an overview
 layout: center
 ---
 
-![](./test1.png){width=550px lazy}
+![](/test1.png){width=550px lazy}
 
 ---
 
@@ -182,7 +182,7 @@ Une spécification: exprime ce qu’on attend du système
 layout: center
 ---
 
-![](./testings.webp){width=400px lazy}
+![](/testings.webp){width=400px lazy}
 
 ---
 layout: cover
