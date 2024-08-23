@@ -1,31 +1,195 @@
 ---
-# try also 'default' to start simple
+# You can also start simply with 'default'
 theme: seriph
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: https://source.unsplash.com/collection/94734566/1920x1080
-# apply any windi css classes to the current slide
-class: 'text-center'
-download: true
-# https://sli.dev/custom/highlighters.html
-highlighter: shiki
-# show line numbers in code blocks
-lineNumbers: false
-# some information about the slides, markdown enabled
+background: https://cover.sli.dev
+# some information about your slides (markdown enabled)
+title: web test Course
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+ ## testing front course @Univ Rennes
+  Master @istic
 
-  Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
+  Learn more at [istic](https://istic.univ-rennes.fr/)
+# apply unocss classes to the current slide
+class: text-center
+# https://sli.dev/features/drawing
 drawings:
   persist: false
+# slide transition: https://sli.dev/guide/animations.html#slide-transitions
+transition: slide-left
+# enable MDC Syntax: https://sli.dev/features/mdc
+mdc: true
 ---
 
 
 # Javascript Testing Frameworks
 
 an overview
+
+
+---
+
+# Tester pour prévenir...
+
+
+- une erreur du développeur introduit …
+  - Une erreur est une décision inappropriée ou erronée, faite par un développeur, qui conduit à l'introduction d'un défaut.
+- un défaut dans le système qui provoquera …
+  - Un défaut est une imperfection dans un des aspects du système qui contribue, ou peut potentiellement contribuer, à la survenance d'une ou de plusieurs défaillances
+  - Parfois, il faut plusieurs défauts pour causer une défaillance.
+- sa défaillance à l’exécution.
+  - Une défaillance est un comportement inacceptable présenté par un système.
+  - La fréquence des défaillances reflète la fiabilité.
+
+---
+layout: center
+---
+
+![](./test1.png){width=550px lazy}
+
+---
+
+# Le test : une première définition ...
+
+> Le test est un processus manuel ou automatique, qui vise à établir qu’un système vérifie les propriétés exigées par sa spécification, ou à détecter des différences entre les résultats engendrés par le système et ceux qui sont attendus par la spécification
+
+Extrait de la norme IEEE-STD729, 1983.
+
+---
+layout: center
+---
+
+Le test
+
+# Essayer pour trouver des bugs
+
+---
+layout: center
+---
+
+Le test
+
+# Essayer pour voir si ça marche.
+
+---
+
+# Le test
+
+trouver des bugs 
+
+Essayer pour voir si ça marche.
+
+<div class="font-mono grid grid-cols-3 gap-4">
+  <div class="bg-gray-500/50 px-3 py-2 rounded w-full" v-click>
+<Md>
+<pre>
+- Apprendre
+  - pourquoi c’est fait
+  - ce que ça doit faire
+  - comment c’est fait
+  - comment ça marche
+- Modéliser
+- S’en faire une idée
+- Exécuter
+- Analyser
+</pre>
+ </Md>
+  </div>
+  <div class="bg-gray-500/50 px-3 py-2 rounded w-full" v-click>
+<Md>
+  <pre>
+- Qu’y a-t-il à **voir**?
+- Que faut-il regarder?
+- Qu’est-ce qui est visible?
+- Qu’est ce qu’on cherche?
+- Comment le regarder?
+</pre>
+</Md>
+  </div>
+  <div class="bg-gray-500/50 rounded px-3 py-2 w-full" v-click>
+<Md>
+      <pre>
+- Qu’est ce qui devrait marcher?
+- Identifier une erreur
+- Diagnostiquer une erreur
+- Catégoriser ces erreurs
+</pre>
+</Md>
+  </div>
+</div>
+
+---
+
+# Qu’est-ce qu’on teste? quelles propriétés?
+
+- Fonctionnalité
+- Sécurité / intégrité
+- Utilisabilité
+- Cohérence
+- Maintenabilité
+- Efficacité
+- Robustesse
+- Sûreté de fonctionnement
+- Etc.
+
+---
+
+# Comment on teste?
+
+- Test statique
+  - relecture / revue de code
+  - analyse automatique (vérification de propriétés, règles de codage...)
+- Test dynamique
+  - on exécute le programme avec des valeurs en entrée et on observe le comportement
+
+---
+
+# Comment on teste?
+
+- Test fonctionnel (test boîte noire)
+  - Utilise la description des fonctionnalités du programme
+
+- Test structurel (test boîte blanche)
+  - Utilise la structure interne du programme
+
+---
+
+# Avec quoi on teste?
+
+Une spécification: exprime ce qu’on attend du système
+  - des règles de codage
+  - un cahier des charges (en langue naturelle)
+  - commentaires dans le code 
+  - contrats sur les opérations (à la Eiffel)
+  - un modèle UML
+  - une spécification formelle (automate, modèle B...)
+
+---
+
+# Différents types de tests
+
+1. Test unitaire, *Unit Testing: Ensures individual code components work correctly in isolation*
+2. Test d’intégration, *Integration Testing: Verifies that different system parts function seamlessly together*
+3. Test système, *E2E testing, System Testing: Assesses the entire system's compliance with user requirements and performance*
+4. Test de charge, *Load Testing: Tests a system's ability to handle high workloads and identifies performance issues.*
+5. *Error Testing: Evaluates how the software handles invalid inputs and error conditions*
+6. Non regression, *Test Automation: Automates test case execution for efficiency, repeatability, and error reduction*
+7. Test de sécurité (Pen testing, ...)
+
+
+---
+layout: center
+---
+
+![](./testings.webp){width=400px lazy}
+
+---
+layout: cover
+---
+
+# Et dans le monde du front
+
 
 ---
 
@@ -97,7 +261,6 @@ https://karma-runner.github.io/3.0/
 Fast, easy and reliable testing for anything that runs in a browser.
 
 A complete end-to-end testing framework.
-
 
 - open source and popular
 - Supports integrations with top CI/CD tools like Jenkins, Travis, and Semaphore
@@ -211,6 +374,7 @@ Adjust your `tsconfig.spec.json` to be:
   "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
 }
 ```
+
 ---
 
 # Configuration 3/3
@@ -401,6 +565,9 @@ next run
 npm run test:cov
 ```
 
+
+---
+layout: default
 ---
 
 # Tips
@@ -414,10 +581,13 @@ npm run test:cov
 layout: center
 class: text-center
 ---
+
 # Cypress for E2E testing
 
 <iframe src="https://player.vimeo.com/video/237527670?h=87400eb056&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
+---
+layout: default
 ---
 
 # References
@@ -427,10 +597,9 @@ class: text-center
 
 
 ---
-layout: center
+layout: end
 class: text-center
 ---
 
-# Learn More
+# Questions?
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)

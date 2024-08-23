@@ -1,18 +1,20 @@
 {
+  "name": "test",
+  "type": "module",
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "buildgithub": "slidev build --base /web.test && rm -rf docs && mv dist docs && git add docs/** && git commit . -m 'update' && git push",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "deploygithub": "slidev build --base /web.test/ --download && rm -rf docs && mv dist docs && git add docs/** && git commit . -m 'update' && git push"
   },
   "dependencies": {
-    "@slidev/cli": "^0.28.10",
-    "@slidev/theme-default": "*",
-    "@slidev/theme-seriph": "*"
+    "@slidev/cli": "^0.49.26",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "vue": "^3.4.38"
   },
-  "name": "web.test",
   "devDependencies": {
-    "playwright-chromium": "^1.19.2"
+    "playwright-chromium": "^1.46.1"
   }
 }
