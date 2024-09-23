@@ -42,6 +42,10 @@ an overview
   - Une défaillance est un comportement inacceptable présenté par un système.
   - La fréquence des défaillances reflète la fiabilité.
 
+  <Scroll/>
+  <footer class="absolute bottom-0 left-0 right"><br/><small>©Me 2023 --- <SlideCurrentNo/>/<SlidesTotal/></small><br/></footer>
+
+
 ---
 layout: center
 ---
